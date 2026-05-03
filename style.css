@@ -216,7 +216,7 @@ body {
    ============================================================ */
 #splash {
   height: 100vh;
-  background-image: url("/img/bg-cloud.jpg");
+  background-image: url("img\bg-cloud.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

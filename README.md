@@ -1,2 +1,2 @@
 # labibans
-proyek ini berisikan sistem game kuis untuk belajar bersma berbasis website yang diperuntukan untuk salah satu Bimba bernama LabibaNS.
+Proyek ini merupakan sistem game kuis berbasis web untuk mendukung kegiatan belajar bersama. Platform ini dirancang khusus untuk Bimba LabibaNS sebagai media pembelajaran interaktif.

@@ -668,6 +668,21 @@ function goToCategory() {
   showScreen("category");
 }
 
+function goToClassCategory() {
+  playClickSound();
+  // sync ikon suara
+  document.getElementById("soundToggle3").textContent = soundOn ? "🔊" : "🔇";
+  showScreen("classCategory");
+}
+
+function showComingSoon(name) {
+  playClickSound();
+  document.getElementById("modalTitle").textContent = "Segera Hadir! 🚀";
+  document.getElementById("modalBody").innerHTML =
+    `Kategori <strong>${name}</strong> sedang dalam pengembangan.<br>Nantikan updatenya ya! 😊`;
+  document.getElementById("modalOverlay").classList.remove("hidden");
+}
+
 /* ============================================================
    GRID KATEGORI
    ============================================================ */

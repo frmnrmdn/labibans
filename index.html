@@ -23,7 +23,8 @@
     <div class="splash-tagline">AYO BELAJAR BERSAMA!</div>
 
     <!-- Tombol Mulai -->
-    <button class="btn btn-yellow" onclick="goToCategory()" style="margin-top:8px;font-size:1.4rem;padding:16px 52px;">
+    <button class="btn btn-yellow" onclick="goToClassCategory()"
+      style="margin-top:8px;font-size:1.4rem;padding:16px 52px;">
       Mulai Belajar
     </button>
 
@@ -34,6 +35,46 @@
 
   </div><!-- #splash -->
 
+  <!-- ================================================
+     LAYAR 1.5 – KATEGORI KELAS
+     ================================================ -->
+  <div class="screen hidden" id="classCategory">
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <img src="img/icon-labiba.png" class="icon-navbar" alt="Icon-Labiba">
+      <div class="navbar-title">Kategori Kelas</div>
+      <button class="sound-btn" onclick="toggleSound()" id="soundToggle3">🔊</button>
+    </div>
+
+    <!-- Konten -->
+    <div class="class-body">
+      <div class="section-title" style="margin-bottom: 8px;">Pilih Kelas Kamu!</div>
+
+      <div class="class-grid">
+
+        <!-- Calistung -->
+        <div class="class-card" onclick="goToCategory()">
+          <div class="class-card-label">Calistung</div>
+          <img src="img/calistung.png" alt="Calistung">
+        </div>
+
+        <!-- Mengaji -->
+        <div class="class-card" onclick="showComingSoon('Mengaji')">
+          <div class="class-card-label">Mengaji</div>
+          <img src="img/mengaji.png" alt="Mengaji">
+        </div>
+
+        <!-- Sekolah Dasar -->
+        <div class="class-card" onclick="showComingSoon('Sekolah Dasar')">
+          <div class="class-card-label">Sekolah Dasar</div>
+          <img src="img/sekolahdasar.png" alt="Sekolah Dasar">
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- #classCategory -->
 
   <!-- ================================================
        LAYAR 2 – PILIH KATEGORI
@@ -53,6 +94,9 @@
 
       <!-- Grid kategori diisi oleh script.js (buildCategoryGrid) -->
       <div class="category-grid" id="categoryGrid"></div>
+      <!-- Tombol kembali ke kelas -->
+      <button class="btn btn-back" style="padding:10px 22px;font-size:1rem;align-self:flex-start;margin-top:auto;"
+        onclick="goToClassCategory()">← Kembali</button>
     </div>
 
   </div><!-- #category -->
